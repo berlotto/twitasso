@@ -2,14 +2,11 @@
 
 from twython import Twython
 import time
-import twittasso_config
-from flask import Flask, redirect, render_template, abort, request, escape, session
 import webbrowser as browser
 import threading
 
-CALLBACK_URL = 'http://localhost:5000/callback'
-APP_KEY = "XjOBXjo4Cv3LXQcO3ZfA"
-APP_SECRET = "CyVor32vCki847fvskGjIFtfeXnptDEoyCDGPJNto"
+APP_KEY = "<YOUR_APP_KEY>"
+APP_SECRET = "<YOUR_APP_KEY_SECRET>"
 TIME = 60 #In seconds
 
 t = Twython(APP_KEY, APP_SECRET)
